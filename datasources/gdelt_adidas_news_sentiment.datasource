@@ -1,0 +1,12 @@
+DESCRIPTION >
+    GDELT English-language adidas news volume and tone. Generated from data/gdelt_adidas_news_sentiment.csv
+
+SCHEMA >
+    `date` Date,
+    `article_count` Int32,
+    `average_tone` Float32,
+    `article_count_7d_avg` Float32,
+    `average_tone_7d_avg` Float32
+
+ENGINE "MergeTree"
+ENGINE_SORTING_KEY "date"

@@ -1,0 +1,16 @@
+DESCRIPTION >
+    Public social-platform snapshots for the adidas brand. Generated from data/adidas_social_snapshot.csv
+
+SCHEMA >
+    `platform` String,
+    `handle` String,
+    `date` Date,
+    `audience_m` Float32,
+    `scale_metric_m` Float32,
+    `scale_metric_label` String,
+    `content_count` Int32,
+    `source` String,
+    `source_url` String
+
+ENGINE "MergeTree"
+ENGINE_SORTING_KEY "platform"

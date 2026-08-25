@@ -1,0 +1,9 @@
+DESCRIPTION >
+    Monthly @adidas Instagram follower snapshots. Generated from data/adidas_instagram_followers.csv
+
+SCHEMA >
+    `month` Date,
+    `followers` Int64
+
+ENGINE "MergeTree"
+ENGINE_SORTING_KEY "month"

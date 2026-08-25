@@ -1,0 +1,19 @@
+TOKEN dashboard_read READ
+DESCRIPTION >
+    ADS.DE (Xetra) daily prices, EUR.
+
+NODE result
+SQL >
+    SELECT
+        date,
+        open,
+        high,
+        low,
+        close,
+        adj_close,
+        volume,
+        daily_return_pct
+    FROM ads_stock_prices
+    ORDER BY date
+
+TYPE ENDPOINT

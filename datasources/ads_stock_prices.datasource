@@ -1,0 +1,15 @@
+DESCRIPTION >
+    ADS.DE (Xetra) daily prices, EUR. Generated from data/ads_stock_prices.csv
+
+SCHEMA >
+    `date` Date,
+    `open` Float32,
+    `high` Float32,
+    `low` Float32,
+    `close` Float32,
+    `adj_close` Float32,
+    `volume` Int64,
+    `daily_return_pct` Float32
+
+ENGINE "MergeTree"
+ENGINE_SORTING_KEY "date"

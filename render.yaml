@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: adidas-recovery-dashboard
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:server
+    envVars:
+      - key: DATA_BACKEND
+        value: local
+      - key: TINYBIRD_API_BASE
+        value: https://api.us-east.tinybird.co
+      - key: TINYBIRD_TOKEN
+        sync: false
+      - key: REQUIRE_TINYBIRD
+        value: false

@@ -1,0 +1,40 @@
+TOKEN dashboard_read READ
+DESCRIPTION >
+    Quarterly adidas AG metrics endpoint (EUR millions).
+
+NODE result
+SQL >
+    SELECT
+        quarter,
+        period_end,
+        release_date,
+        total_revenue_m,
+        reported_revenue_change_pct,
+        currency_neutral_revenue_change_pct,
+        brand_revenue_m,
+        brand_reported_change_pct,
+        brand_cn_change_pct,
+        wholesale_revenue_m,
+        wholesale_reported_change_pct,
+        wholesale_cn_change_pct,
+        retail_revenue_m,
+        retail_reported_change_pct,
+        retail_cn_change_pct,
+        ecom_revenue_m,
+        ecom_reported_change_pct,
+        ecom_cn_change_pct,
+        gross_margin_pct,
+        gross_margin_change_bps,
+        operating_profit_m,
+        operating_margin_pct,
+        net_income_m,
+        net_income_change_pct,
+        diluted_eps,
+        eps_change_pct,
+        inventories_m,
+        inventory_change_pct,
+        cash_and_short_investments_m
+    FROM adidas_quarterly_metrics
+    ORDER BY period_end
+
+TYPE ENDPOINT

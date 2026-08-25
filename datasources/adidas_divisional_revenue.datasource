@@ -1,0 +1,14 @@
+DESCRIPTION >
+    adidas region x product revenue (EUR millions). Generated from data/adidas_divisional_revenue.csv
+
+SCHEMA >
+    `quarter` String,
+    `region` String,
+    `product` String,
+    `revenue_m` Int32,
+    `prior_year_revenue_m` Int32,
+    `reported_change_pct` Int16,
+    `currency_neutral_change_pct` Int16
+
+ENGINE "MergeTree"
+ENGINE_SORTING_KEY "quarter"

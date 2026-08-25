@@ -1,0 +1,13 @@
+TOKEN dashboard_read READ
+DESCRIPTION >
+    Monthly @adidas Instagram follower snapshots.
+
+NODE result
+SQL >
+    SELECT
+        month,
+        followers
+    FROM adidas_instagram_followers
+    ORDER BY month
+
+TYPE ENDPOINT

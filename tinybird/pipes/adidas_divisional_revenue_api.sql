@@ -1,0 +1,11 @@
+-- adidas_divisional_revenue_api: adidas region x product revenue (EUR millions).
+SELECT
+    quarter,
+        region,
+        product,
+        revenue_m,
+        prior_year_revenue_m,
+        reported_change_pct,
+        currency_neutral_change_pct
+FROM adidas_divisional_revenue
+ORDER BY quarter

@@ -1,0 +1,36 @@
+DESCRIPTION >
+    Quarterly adidas AG metrics endpoint (EUR millions). Generated from data/adidas_quarterly_metrics.csv
+
+SCHEMA >
+    `quarter` String,
+    `period_end` Date,
+    `release_date` Date,
+    `total_revenue_m` Int32,
+    `reported_revenue_change_pct` Int16,
+    `currency_neutral_revenue_change_pct` Int16,
+    `brand_revenue_m` Int32,
+    `brand_reported_change_pct` Int16,
+    `brand_cn_change_pct` Int16,
+    `wholesale_revenue_m` Int32,
+    `wholesale_reported_change_pct` Int16,
+    `wholesale_cn_change_pct` Int16,
+    `retail_revenue_m` Int32,
+    `retail_reported_change_pct` Int16,
+    `retail_cn_change_pct` Int16,
+    `ecom_revenue_m` Int32,
+    `ecom_reported_change_pct` Int16,
+    `ecom_cn_change_pct` Int16,
+    `gross_margin_pct` Float32,
+    `gross_margin_change_bps` Int32,
+    `operating_profit_m` Int32,
+    `operating_margin_pct` Float32,
+    `net_income_m` Int32,
+    `net_income_change_pct` Int16,
+    `diluted_eps` Float32,
+    `eps_change_pct` Int16,
+    `inventories_m` Int32,
+    `inventory_change_pct` Int16,
+    `cash_and_short_investments_m` Int32
+
+ENGINE "MergeTree"
+ENGINE_SORTING_KEY "period_end"
