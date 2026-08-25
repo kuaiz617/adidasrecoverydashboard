@@ -11,6 +11,7 @@ bundled local CSV fallback so it runs immediately with no setup.
 **Research question:** Is adidas' FY2026 recovery genuinely broad-based, or is the
 rebound concentrated in DTC and a few fast-growing regions while wholesale, Europe,
 and the share price stay under pressure?
+Live Render app:https://adidasrecoverydashboard.onrender.com/
 
 The three quarters shown are the most recently reported as of August 2026:
 **Q4 2025, Q1 2026, and Q2 2026** (adidas reports on a calendar fiscal year).
